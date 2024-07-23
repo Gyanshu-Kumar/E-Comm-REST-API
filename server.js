@@ -27,13 +27,17 @@ db.once("open", () => {
 
 
 async function init1() {
-    
+
+    try {
         let user = await user_model.findOne({ userId: "admin" });
         if (user) {
             console.log("Admin user is already created");
             return;
         }
-
+    } catch (error) {
+        console.log("Error creating admin user:", error);
+        
+    }
         try{
             user = await user_model.create({
             name: "Gyanshu",
