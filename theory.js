@@ -16,3 +16,12 @@
 
 //    "email": "shivani123@example.com",
  //   "password": "password12345
+
+ // Middleware -> Middleware is a function that is executed before the route handler.
+//   Middleware can be used to perform tasks such as logging, authentication, authorization, etc. 
+//   Middleware can be used to modify the request object, the response object, or to end the request-response cycle. Middleware can be used to pass control to the next middleware function. 
+//   Middleware can be used to end the request-response cycle. Middleware can be used to send a response to the client. Middleware can be used to handle errors. Middleware can be used to perform tasks such as logging, authentication, authorization, etc. 
+//   Middleware can be used to modify the request object, the response object, or to end the request-response cycle. Middleware can be used to pass control to the next middleware function. Middleware can be used to end the request-response cycle.
+//   Middleware can be used to send a response to the client. Middleware can be used to handle errors.
+//(req, res, next) => { // Middleware function
+// next keyword is used to pass control to the next middleware function

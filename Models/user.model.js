@@ -35,6 +35,6 @@ const userSchema = new mongoose.Schema({
         default : "CUSTOMER",
         enum : ["CUSTOMER", "ADMIN"]
     }
-},{timestamps:true, versionKey:false})
+},{timestamps:true, versionKey:false}) // This line will add createdAt and updatedAt fields automatically.
 
 module.exports = mongoose.model("User", userSchema) // This line will create a collection named 'users' in the database with the above schema.
